@@ -1,0 +1,9 @@
+
+file1=open('abc.txt','r')
+print(file1.read())
+f=open("abc.txt","a")
+f.write("good boy")
+f.close()
+file1=open('abc.txt','r')
+print(file1.read())
+f.close()

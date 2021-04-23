@@ -1,0 +1,48 @@
+s=int(input())
+t=int(input())
+a=int(input())
+b=int(input())
+m=int(input())
+n=int(input())
+list1=[]
+list2=[]
+apple_count=0
+orange_count=0
+for i in range(0,m):
+    x=int(input())
+    list1.append(a+x)
+for i in range(0,n):
+    x=int(input())
+    list2.append(b+x)
+for i in range(0,m):
+      if list1[i]>=s and list1[i]<=t:
+          apple_count+=1
+for i in range(0,n):
+      if list2[i]>=s and list2[i]<=t:
+          orange_count+=1
+print(apple_count)
+print(orange_count)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+MULTIPLE INPUT IN SINGLE LINE IN VARIABLE AND LIST
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+s,t=map(int,input().split())
+a,b=map(int,input().split())
+m,n=map(int,input().split())
+list1=list(map(int,input().split()))
+list2=list(map(int,input().split()))
+apple_count=0
+orange_count=0
+for i in range(0,m):
+      list1[i]=list1[i]+a
+for i in range(0,n):
+    list2[i]=list2[i]+b
+for i in range(0,m):
+      if list1[i]>=s and list1[i]<=t:
+          apple_count+=1
+for i in range(0,n):
+      if list2[i]>=s and list2[i]<=t:
+          orange_count+=1
+print(apple_count)
+print(orange_count)
+

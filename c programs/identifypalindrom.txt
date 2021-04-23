@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+	int n,r,sum,rev,total,totalchk;
+	printf("enter a no\n");
+	scanf("%d",&n);
+	
+	while(n>0)
+	{
+	sum=n;
+	rev=0;
+	while(n>0)
+	{
+		r=n%10;
+		n=n/10;
+		rev=rev*10+r;
+	}
+	total=sum+rev;
+	totalchk=total;
+		rev=0;
+	while(total>0)
+	{
+		r=total%10;
+		total=total/10;
+		rev=rev*10+r;
+	}
+	
+	if(totalchk==rev)
+	{
+	printf("palindrom is %d",rev);
+        n=0;
+}
+	else
+	{
+		n=rev+totalchk;
+	
+		
+	}
+}
+	
+	return 0;
+	
+}

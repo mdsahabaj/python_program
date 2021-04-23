@@ -1,0 +1,13 @@
+#in how many ways a no is some of consucatitve no like 10=1+2+3+4 in 1 way
+
+
+N=int(input('enter the no'))
+count=0
+n=2
+while(2*N+n-n**2>0):       #ap series incriment by 1 so use sum=n/2(first term+last term)
+   a=(2*N+n-n**2)/(2*n)     #a positve so numenitor also positive
+   if(a-int(a)==0):         #float valuen == integer value 
+      print(a,n)		#first term and no of total term
+      count+=1			 #no of ways
+   n+=1
+print('the no of ways is %d'%count)

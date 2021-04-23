@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int n,a[100],i,search,first,mid,last;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+    	scanf("%d",&a[i]);
+	}
+	scanf("%d",&search);
+	first=0;
+	last=n-1;
+	mid=(first+last)/2;
+	while(last>=first){
+		if(a[mid]==search){
+			printf("location=%d",mid);
+			break;
+		}
+		else if(a[mid]<search){
+			first=mid+1;
+			
+		}
+		else if(a[mid]>search) {
+			last=mid-1;
+			
+			
+		}
+	mid=(first+last)/2;
+	}
+	
+}

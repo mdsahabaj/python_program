@@ -1,0 +1,8 @@
+print('how many no yo u want to enter')
+x=int(input())
+sum=0.0
+for i in range(0,x):
+    list=int(input())
+    sum+=list
+    
+print('%0.1f'%(sum/x))

@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int i,no;
+	char a[50];
+	printf("enter a string");
+	gets(a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(a[i]>=48&&a[i]<=58)
+		{
+			no=a[i]-48;
+			printf("%d",no);
+		}
+		if(a[i]==45)
+		{
+			
+			printf("-");
+		}
+	}
+	return 0;
+}

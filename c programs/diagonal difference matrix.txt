@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int n,a[50][50],i,j,sum=0,sum1=0,diff,k,result;
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+			scanf("%d",&a[i][j]);
+			
+		}}
+	for(i=0;i<n;i++){
+		for(j=0;j<n;j++){
+			if(i==j){
+				sum+=a[i][j];
+			}
+			
+		}
+		
+	}
+	k=n;
+	i=0;
+	j=n-1;
+	for(k=0;k<n;k++){
+		sum1+=a[i++][j--];
+	}
+	diff=sum-sum1;
+	result=abs(diff);
+	printf("%d",result);
+	return 0;
+	
+}

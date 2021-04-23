@@ -1,0 +1,10 @@
+list=[]
+sum=0.0
+print('enter how many elements you want to enter')
+x=int(input())
+for i in range (0,x):
+    list.append(int(input()))
+    sum+=list[i]
+print("%f"%(sum/x))
+list[0]=10
+print(list)

@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+	int n,a[100],search,i,count=0,y;
+	printf("enter the size of array");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		
+	}
+	printf("enter the search element");
+	scanf("%d",&search);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==search){
+			count+=1;
+			y=i+1;
+		}
+	}
+	if(count==1)
+	{
+		printf("successful search and location=%d",y);
+	}
+	else{
+		printf("searching element not found");
+	}
+}

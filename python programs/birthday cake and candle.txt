@@ -1,0 +1,9 @@
+x=int(input())
+list1=list(map(int,input().split()[:x]))
+l=len(list1)
+m=max(list1)
+count=0
+for i in range(0,l):
+      if m==list1[i]:
+            count+=1
+print(count)

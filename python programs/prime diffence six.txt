@@ -1,0 +1,27 @@
+x=int(input())
+y=int(input())
+
+
+list=[]
+for i in range(x,y+1,1):
+      count=0
+      a=1
+      while (a<=i):
+          if i%a==0:
+             count+=1
+             a+=1
+          else:
+             a+=1
+      if count==2:
+        list.append(i)
+print(list)
+
+ans=0
+l=len(list)
+for i in range(0,l):
+    for j in range(i+1,l):
+        if list[j]-list[i]==6:
+            ans+=1
+print(ans)   
+      
+    

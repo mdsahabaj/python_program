@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int n,i,x,y,a;
+	long int sum=0,sum1=0,diff;
+	char s[2000];
+	printf("enter a no");
+	gets(s);
+	a=strlen(s);
+	for(i=0;i<a;i++)
+	{
+		if(i%2==0)
+		{
+			x=s[i]-48;
+			sum+=x;
+		}
+		else
+		{
+			y=s[i]-48;
+			sum1+=y;
+		}
+	}
+	diff=sum-sum1;
+	printf("%d\n",sum);
+	printf("%d\n",sum1);
+	printf("%d\n",diff);
+	
+}

@@ -1,0 +1,12 @@
+x=input('enter a no')
+even_sum=odd_sum=0
+y=len(x)
+for i in range(0,y):
+    if i%2==0:
+        a=ord(x[i])-48
+        even_sum+=a
+    else:
+        a=ord(x[i])-48
+        odd_sum+=a
+diff=even_sum-odd_sum
+print('even_sum=%d\n odd_sum=%d\ndifference=%d'%(even_sum,odd_sum,diff))

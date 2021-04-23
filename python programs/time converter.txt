@@ -1,0 +1,18 @@
+date=input()
+h,m,s=date.split(':')
+s1=s[0:2]
+s2=s[2:4]
+if s2=='PM':
+    if h!='12':
+        h=int(h)+12
+        print(str(h)+':'+m+':'+s1)
+    else:
+         print(str(h)+':'+m+':'+s1)
+if s2=='AM':
+    if h=='12':
+        h='00'
+        print(h+':'+m+':'+s1)
+    else:
+        print(h+':'+m+':'+s1)
+        
+        

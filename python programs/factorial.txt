@@ -1,0 +1,6 @@
+x=int(input())
+fac=1
+while(x>0):
+    fac*=x
+    x=x-1
+print("%d"%fac)

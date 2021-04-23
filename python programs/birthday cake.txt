@@ -1,0 +1,19 @@
+x=int(input())
+list1=list(map(int,input().split()[:x]))
+d,m=map(int,input().split())
+count=0
+k=0
+for i in range(m,x+1):
+    sum=0
+    for j in range(k,m):
+        sum+=list1[j]
+    if sum==d:
+        count+=1
+        k+=1
+        m+=1
+    else:
+        k+=1
+        m+=1
+    if m==x+1:
+        break
+print(count)

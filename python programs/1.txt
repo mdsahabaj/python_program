@@ -1,0 +1,14 @@
+x=int(input())
+list1=[]
+list2=[]
+for i in range(0,x):
+    y=int(input())
+    list1.append(y)
+for i in range(0,x):
+    sum=1
+    for j in range(0,x):
+        if i!=j:
+            sum*=list1[j]
+    list2.append(sum)
+for i in list2:
+    print(i)
